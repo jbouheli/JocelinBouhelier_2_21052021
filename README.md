@@ -1,1 +1,1 @@
-# OCR-Projet2Final
+# Projet 2 de la formation Développeur Web chez Openclassrooms : Transformez une maquette en site web / Version final
