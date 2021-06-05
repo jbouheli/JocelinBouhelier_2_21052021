@@ -286,14 +286,6 @@ html, body {
     border: 1px solid black;
 }
 
-.cardAct {
-    width: 49.5%;
-    height: 100%;
-    border-radius: 20px;
-    box-shadow: 1px 1px 10px rgb(211, 211, 211);
-
-}
-
 .cardDetailAct {
     width: 90%;
 }
@@ -310,31 +302,64 @@ html, body {
     display: flex;
     flex-flow: column wrap;
     width: 100%;
-    height: 600px;
+    height: 450px;
     border: 1px solid blue;
 }
 
+.colonneAct {
+    width: 22.5%;
+    height: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.colonneAct2 {
+    width: 22.5%;
+    height: 100%;
+    margin-left: 20px;
+}
+
+.cardAct {
+    width: 22.5%;
+    height: 100%;
+    margin-right: 20px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px rgb(211, 211, 211);
+}
+
 .cardAct2 {
-    width: 49.5%;
-    height: 250px;
+    width: 100%;
+    height: 60%;
+    margin-bottom: 20px;
     border-radius: 20px;
     box-shadow: 1px 1px 10px rgb(211, 211, 211);
 }
 .cardAct3 {
-    width: 49.5%;
-    height: 250px;
+    width: 100%;
+    height: 40%;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px rgb(211, 211, 211);
+}
+.cardAct4 {
+    width: 22.5%;
+    height: 100%;
+    margin-right: 20px;
+    margin-left: 20px;
     border-radius: 20px;
     box-shadow: 1px 1px 10px rgb(211, 211, 211);
 }
 .cardAct5 {
-    width: 49.5%;
-    height: 250px;
+    width: 100%;
+    height: 45%;
+    margin-bottom: 20px;
     border-radius: 20px;
     box-shadow: 1px 1px 10px rgb(211, 211, 211);
 }
 .cardAct6 {
-    width: 49.5%;
-    height: 250px;
+    width: 100%;
+    height: 55%;
+    margin-top: 20px;
     border-radius: 20px;
     box-shadow: 1px 1px 10px rgb(211, 211, 211);
 }
@@ -433,13 +458,14 @@ html, body {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 10em;
+    height: 100%;
     border-radius: 15px 15px 0 0;
 }
 .imgActivites3 {
     background-image: url(./Projet2-Reservia/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
     background-size: cover;
     background-position: center;
+    object-fit: cover;
     width: 100%;
     height: 100%;
     border-radius: 15px 15px 0 0;
@@ -457,7 +483,7 @@ html, body {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 120px;
+    height: 100%;
     border-radius: 15px 15px 0 0;
 }
 .imgActivites6 {
@@ -465,6 +491,6 @@ html, body {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 120px;
+    height: 100%;
     border-radius: 15px 15px 0 0;
 }
