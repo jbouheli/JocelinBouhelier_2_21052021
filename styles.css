@@ -2,6 +2,13 @@
 
 html, body {
     font-family: Raleway;
+    font-size: 1em;
+}
+
+.blocPage {
+    width: auto;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 .flex-center {
@@ -282,8 +289,8 @@ html, body {
 
 .sizeActivites {
     flex: 1;
+    margin-bottom: 10px;
     padding-top: 2px;
-    border: 1px solid black;
 }
 
 .cardDetailAct {
@@ -303,7 +310,6 @@ html, body {
     flex-flow: column wrap;
     width: 100%;
     height: 450px;
-    border: 1px solid blue;
 }
 
 .colonneAct {
@@ -329,7 +335,7 @@ html, body {
 
 .cardAct2 {
     width: 100%;
-    height: 60%;
+    height: 58%;
     margin-bottom: 20px;
     border-radius: 20px;
     box-shadow: 1px 1px 10px rgb(211, 211, 211);
@@ -351,19 +357,31 @@ html, body {
 }
 .cardAct5 {
     width: 100%;
-    height: 45%;
+    height: 47%;
     margin-bottom: 20px;
     border-radius: 20px;
     box-shadow: 1px 1px 10px rgb(211, 211, 211);
 }
 .cardAct6 {
     width: 100%;
-    height: 55%;
+    height: 53%;
     margin-top: 20px;
     border-radius: 20px;
     box-shadow: 1px 1px 10px rgb(211, 211, 211);
 }
 
+/* FOOTER */
+
+.blocFooter {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.cardFooter {
+    width: 15em;
+    margin: 2em 5em 2em 3em;
+}
 
 /* IMAGES / HEB */
 
@@ -465,7 +483,6 @@ html, body {
     background-image: url(./Projet2-Reservia/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
     background-size: cover;
     background-position: center;
-    object-fit: cover;
     width: 100%;
     height: 100%;
     border-radius: 15px 15px 0 0;
