@@ -1,13 +1,22 @@
 /* GENERAL */
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 5px 0 5px 0;
+}
+
 html, body {
     font-family: 'Raleway', sans-serif;
 }
 
 .blocPage {
     width: auto;
-    margin-left: 2em;
-    margin-right: 2em;
+    margin-left: 3em;
+    margin-right: 3em;
 }
 
 .flex-center {
@@ -52,18 +61,48 @@ html, body {
     flex-wrap: wrap;
 }
 
-/* STYLES ET COULEURS */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;600&display=swap');
+.flex-row {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/* STYLES ET COULEURS ------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;500&display=swap');
 
 .texteLight {
     font-weight: 100;
-    font-size: .9em;
+    font-size: .8em;
 }
 
 .texteGras {
-    font-weight: 600;
-    font-size: 1em;
+    font-weight: 500;
+    font-size: .9em;
+}
+
+h1 {
+    font-size: 1.2em;
+}
+
+footer p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.marginText {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.marginBloc {
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 .borderNone {
@@ -97,7 +136,7 @@ html, body {
 .backGris {
     background-color: #f2f2f2;
 }
-/* NAVIGATION */
+/* NAVIGATION -------------------------------------- NAVIGATION*/
 
 .sizeNav {
     height: 100px;
@@ -132,41 +171,42 @@ html, body {
     margin-bottom: 7px;
 }
 
-/* HEADER */
+/* HEADER ------------------------------------------ HEADER */
 
 .borderSearch {
-    width: 400px;
+    justify-content: space-between;
+    width: 23.2em;
     border-radius: 10px;
     border: 0.5px solid #f2f2f2;
 }
 
 .paddingSearch {
-    padding-left: 20px;
+    padding-left: 5px;
 }
 
 .buttonSearch {
-    height: 50px;
-    width: 120px;
+    height: 2.8em;
+    width: 7.5em;
     color: white;
     cursor: pointer;
-    border-radius: 0 10px 10px 0;
+    border-radius: 0 13px 13px 0;
 }
 
 .recherche {
-    height: 50px;
-    width: 230px;
-    font-size: 18px;
+    height: 2.8em;
+    width: 11.5em;
+    font-size: 1em;
     color: black;
     font-weight: bold;
 }
 
 .iconSize {
-    height: 50px;
-    width: 50px;
+    height: auto;
+    width: 2.9em;
     border-radius: 10px 0 0 10px;
 }
 
-/* FILTRES */
+/* FILTRES -------------------------------------------- FILTRES*/
 
 .marginFiltre {
     margin-top: 50px;
@@ -215,7 +255,7 @@ html, body {
     background-color: #deebff;
 }
 
-/* INFO ICONE */
+/* INFO ICONE ------------------------------------------- ICONE */
 
 .info {
     display: flex;
@@ -230,11 +270,11 @@ html, body {
     margin-right: 5px;
 }
 
-/* HEBERGEMENTS */
+/* HEBERGEMENTS ----------------------------------------- HEBERGEMENT*/
 
 .sizeHeb {
-    flex: 2;
-    height: 650px;
+    flex: 2.3;
+    justify-content: space-between;
     margin-right: 20px;
     border-radius: 10px;
 }
@@ -245,16 +285,23 @@ html, body {
 }
 
 .cardHeb {
-    width: 30%;
-    height: auto;
+    width: 28%;
+    height: 10.5em;
     background-color: white;
-    padding: .5%;
+    padding: .3em;
     border-radius: 20px;
     box-shadow: 1px 1px 10px rgb(211, 211, 211);
 }
 
+.imgHeb {
+    object-fit: cover;
+    height: 60%;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
 .bloc1 {
-    margin-bottom: 10px;
+    justify-content: space-around;
 }
 
 .bloc2 {
@@ -262,14 +309,14 @@ html, body {
 }
 
 .cardDetailHeb {
-    width: 90%;
+    margin-left: 10px;
 }
 
-/* POPULAIRE */
+/* POPULAIRE ------------------------------------------ POPULAIRE */
 
 .sizePop {
     flex: 1;
-    height: 650px;
+    justify-content: space-between;
     margin-left: 20px;
     border-radius: 10px;
 }
@@ -281,7 +328,7 @@ html, body {
 
 .cardPop {
     width: 100%;
-    height: 9em;
+    height: 7em;
     background-color: white;
     margin-bottom: 2em;
     padding: 1% 0 1% 1%;
@@ -289,12 +336,20 @@ html, body {
     box-shadow: 1px 1px 10px rgb(211, 211, 211);
 }
 
+.imgPop {
+    object-fit: cover;
+	width: 35%;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+    margin-right: 1em;
+}
+
 .cardDetailPop {
     width: 100%;
     padding-left: 1em;
 }
 
-/* ACTIVITE */
+/* ACTIVITE ------------------------------------------ ACTIVITE*/
 
 .sizeActivites {
     flex: 1;
@@ -379,7 +434,7 @@ html, body {
     box-shadow: 1px 1px 10px rgb(211, 211, 211);
 }
 
-/* FOOTER */
+/* FOOTER -------------------------------------------- FOOTER */
 
 .blocFooter {
     margin-top: 10px;
@@ -390,84 +445,6 @@ html, body {
 .cardFooter {
     width: 15em;
     margin: 2em 5em 2em 3em;
-}
-
-/* IMAGES / HEB */
-
-.imgHebergements1 {
-    background-image: url(./Projet2-Reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 120px;
-    border-radius: 15px 15px 0 0;
-}
-.imgHebergements2 {
-    background-image: url(./Projet2-Reservia/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 120px;
-    border-radius: 15px 15px 0 0;
-}
-.imgHebergements3 {
-    background-image: url(./Projet2-Reservia/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 120px;
-    border-radius: 15px 15px 0 0;
-}
-.imgHebergements4 {
-    background-image: url(./Projet2-Reservia/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 120px;
-    border-radius: 15px 15px 0 0;
-}
-.imgHebergements5 {
-    background-image: url(./Projet2-Reservia/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 120px;
-    border-radius: 15px 15px 0 0;
-}
-.imgHebergements6 {
-    background-image: url(./Projet2-Reservia/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 120px;
-    border-radius: 15px 15px 0 0;
-}
-
-/* IMAGES / POP */
-
-.imgPopulaires1 {
-    background-image: url(./Projet2-Reservia/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-    width: 60%;
-    height: 100%;
-    border-radius: 15px 0 0 15px;
-}
-.imgPopulaires2 {
-    background-image: url(./Projet2-Reservia/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-    width: 60%;
-    height: 100%;
-    border-radius: 15px 0 0 15px;
-}
-.imgPopulaires3 {
-    background-image: url(./Projet2-Reservia/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-    width: 60%;
-    height: 100%;
-    border-radius: 15px 0 0 15px;
 }
 
 /* IMAGES / ACT */
@@ -520,3 +497,24 @@ html, body {
     height: 100%;
     border-radius: 15px 15px 0 0;
 }
+
+/* RESPONSIVE ------------------------------------ RESPONSIVE */
+
+@media screen and (max-width: 500px) {
+    .flex-around-column {   
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    .flex-around-column {
+        min-width: 250px;
+    }
+
+    .cardHeb {
+        width: 100%;
+    }
+
+    .main-header .nav-container {
+        justify-content: space-between;
+    }
+  } 
