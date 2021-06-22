@@ -1,1 +1,1 @@
-# Projet 2 de la formation Développeur Web chez Openclassrooms : Transformez une maquette en site web / Version final
+# https://jbouheli.github.io/OCR-Projet2Final/
