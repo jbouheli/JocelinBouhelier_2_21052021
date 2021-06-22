@@ -316,10 +316,16 @@ header {
     background-color: #f2f2f2;
 }
 
+.bloc-card-pop {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
 .card-pop {
     display: flex;
     width: 20.5em;
-    height: 9em;
+    height: 8.5em;
     background-color: white;
     margin-bottom: 1em;
     padding: .3em;
@@ -356,8 +362,6 @@ header {
     flex: 2;
     justify-content: space-around;
     background-color: white;
-    border-radius: 25px;
-    border: 1px solid black;
 }
 
 .bloc-card-heb {
@@ -395,13 +399,11 @@ header {
     justify-content: space-around;
     background-color: white;
     border-radius: 25px;
-    border: 1px solid black;
 }
 
 .bloc-card-act {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;   
+    flex-flow: row wrap;  
 }
 
 .card-act {
@@ -414,6 +416,7 @@ header {
 
 .column-act {
     justify-content: space-around;
+    margin-bottom: 1em;
 }
 
 .img-act {
@@ -481,15 +484,21 @@ header {
     .bloc-heb-pop {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
     }
     .bloc-pop {
         width: 375px;
         border-radius: 25px;
         order: 1;
     }
-    .bloc-heb {
-        border: 1px solid red;
+    .bloc-heb {
+        width: 100%;
+        padding: 1.5em;
+        margin-right: 2em;
+        flex: 2;
+        justify-content: space-around;
         background-color: #f2f2f2;
+        border-radius: 25px;
     }
     .card-heb {
         width: 15em;
@@ -498,15 +507,39 @@ header {
         display: flex;
         flex-wrap: wrap;
     }
-}
-@media screen and (min-width: 780px) {
     .column-act {
         display: flex;
         height: 450px;
-        width: 50%;
+        width: 80%;
         flex-flow: column wrap;
         justify-content: space-between;
     }
+    .cardAct {
+        width: 16em;
+        height: 100%;
+        border-radius: 20px;
+        box-shadow: 1px 1px 10px rgb(211, 211, 211);
+    }
+    .cardAct > img {
+        height: 85%;
+    }
+    .cardAct2 {
+        width: 16em;
+        height: 50%;
+        border-radius: 20px;
+        box-shadow: 1px 1px 10px rgb(211, 211, 211);
+    }
+    .cardAct2 > img {
+        height: 75%;
+    }
+    .cardAct3 {
+        width: 16em;
+        height: 40%;
+        border-radius: 20px;
+        box-shadow: 1px 1px 10px rgb(211, 211, 211);
+    }
+}
+@media screen and (min-width: 780px) {
     .cardAct {
         width: 16em;
         height: 100%;
