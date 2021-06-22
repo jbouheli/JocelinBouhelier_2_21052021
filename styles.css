@@ -428,6 +428,20 @@ header {
     margin-top: 1em;
 }
 
+/* Footer */
+
+.bloc-footer {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.card-footer {
+    width: 15em;
+    margin: 2em 5em 2em 3em;
+}
+
 /* version tablette */
 
 @media screen and (min-width: 600px) {
