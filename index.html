@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,234 +8,232 @@
         href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" 
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" 
         crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylesBis.css">
     <title>Reservia</title>
 </head>
 <body>
-    <div class="blocPage">
-        <nav class="sizeNav">
-            <div class="flex-between">
-                <div><img
-                    class="margin-logo"
-                    src="./Projet2-Reservia/images/logo/Reservia@3x.png" alt="Logo Reservia"
-                    width="120px" height="50px"></div>
-                <div class="flex-around sizeLiens">
-                    <div class="sizeLien flex-center bordureNav">
-                        <a class="colorBleu decorationNone" href="#">Hébergements</a>
-                    </div>
-                    <div class="sizeLien flex-center bordureNav23">
-                        <a class="colorLien2 decorationNone" href="#">Activités</a>
-                    </div>
-                    <div class="sizeLien flex-center bordureNav23">
-                        <a  class="colorBleu decorationNone" href="#">S'inscrire</a>
+    <div class="bloc-page">
+        <div class="container">
+            <header>
+                <!-- Logo + barre de navigation -->
+                <div class="flex-wrap row flex-between">
+                    <div class="conteneur-logo"><a href="#">
+                        <img src="./Projet2-Reservia/images/logo/Reservia.svg" alt="Logo Reservia">
+                    </a></div>
+                    <nav class="flex-around nav">
+                        <div class="item-lien flex-center">
+                            <a class="color-black decoration-none" href="#">Hébergements</a>
+                        </div>
+                        <div class="item-lien flex-center">
+                            <a class="color-black decoration-none" href="#">Activités</a>
+                        </div>
+                    </nav>
+                    <div class="flex-center signin">
+                        <a  class="color-bleu decoration-none" href="#">S'inscrire</a>
                     </div>
                 </div>
-            </div>
-        </nav>
-        <header>
-            <section>
-                <div>
-                    <h1 class="texteGras">Trouvez votre hébergement pour des vacances de rêve</h1>
-                    <p class="texteLight">En plein centre ville ou en pleine nature</p>
-                    <div class="flex-center borderSearch">
-                        <div class="backGris flex-center iconSize">
+                <!-- Info header + barre de recherche -->
+                <div class="flex-wrap flex-around-column">
+                    <div class="description">
+                        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                        <p>En plein centre ville ou en pleine nature</p>
+                    </div>
+                    <div class="search-bar flex-wrap flex-between">
+                        <div class="back-gris flex-center size-icon">
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
                         <div>
                             <input
-                                class="flex-center recherche borderNone paddingSearch"
+                                class="flex-center input-search border-none"
                                 type="search" value="Marseille, France">
                         </div>
-                        <div class="backBleu flex-center buttonSearch">Rechercher</div>
+                        <div class="back-bleu flex-center button-search">
+                            <i class="fas fa-search"></i>
+                        </div>
                     </div>
                 </div>
-                <div class="filtre marginFiltre">
-                    <div class="marginFiltreTitre"><p class="texteGras">Filtres</p></div>
-                    <div class="flex-between filtreTexteIcons">
-                        <i class="fas fa-money-bill-wave fa-lg filtreIcons flex-center"></i>
-                        <div class="filtreTexte flex-center texteGras">Économique</div>
+                <!-- Filtres -->
+                <div class="flex-wrap flex-between filters">
+                    <h3 class="title-filters">Filtres</h3>
+                    <div class="flex-between card-filters">
+                        <div class="icon-filters flex-center"><i class="fas fa-money-bill-wave fa-lg"></i></div>
+                        <div class="text-filters flex-center texte-gras">Économique</div>
                     </div>
-                    <div class="flex-between filtreTexteIcons">
-                        <i class="flex-center fas fa-child fa-lg filtreIcons flex-center"></i>
-                        <div class="filtreTexte flex-center texteGras">Familial</div>
+                    <div class="flex-between card-filters">
+                        <div class="icon-filters flex-center"><i class="fas fa-child fa-lg"></i></div>
+                        <div class="text-filters flex-center texte-gras">Familial</div>
                     </div>
-                    <div class="flex-between filtreTexteIcons">
-                        <i class="fas fa-heart filtreIcons fa-lg flex-center flex-center"></i>
-                        <div class="filtreTexte flex-center texteGras">Romantique</div>
+                    <div class="flex-between card-filters">
+                        <div class="icon-filters flex-center"><i class="fas fa-heart fa-lg"></i></div>
+                        <div class="text-filters flex-center texte-gras">Romantique</div>
                     </div>
-                    <div class="flex-between filtreTexteIcons">
-                        <i class="fas fa-dog filtreIcons fa-lg flex-center flex-center"></i>
-                        <div class="filtreTexte flex-center texteGras">Animaux autorisés</div>
+                    <div class="flex-between card-filters">
+                        <div class="icon-filters flex-center"><i class="fas fa-dog fa-lg"></i></div>
+                        <div class="text-filters flex-center texte-gras">Animaux autorisés</div>
                     </div>
                 </div>
-                <div class="info">
-                    <div class="blocIcon flex-center">
-                        <i class="fas fa-info fa-xs colorBleu"></i>
+                <div class="info-bulle">
+                    <div class="bloc-bulle">
+                        <div class="icon-info-bulle flex-center">
+                            <i class="fas fa-info fa-sm color-bleu"></i>
+                        </div>
                     </div>
-                    <p class="texteLight">Plus de 500 logements sont disponibles dans cette ville</p>
+                    <p class="text-info-bulle">Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
+            </header>
+            <section>
+                <!-- Section Populaires / Hébergements / Activités -->
+                <div class="bloc-heb-pop">
+                    <!-- Bloc Populaires -->
+                    <div class="bloc-pop">
+                        <div>
+                            <div class="flex-between margin-titre">
+                                <h1>Les plus populaires</h1>
+                                <i class="fas fa-chart-line fa-lg"></i>
+                            </div>
+                            <div>
+                                <div class="card-pop">
+                                    <img class="img-pop" src="Projet2-Reservia/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="img" />
+                                    <div class="card-details-pop">
+                                        <p class="text-gras">Hôtel Le soleil du matin</p>
+                                        <p class="text-light">Nuit à partir de 128<b>€</b></p>
+                                        <div>étoiles</div>
+                                    </div>
+                                </div>
+                                <div class="card-pop">
+                                    <img class="img-pop" src="Projet2-Reservia/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="img" />
+                                    <div class="card-details-pop">
+                                        <p class="text-gras">Au coeur de l'eau Chambres d'hôtes</p>
+                                        <p class="text-light">Nuit à partir de 71<b>€</b></p>
+                                        <div>étoiles</div>
+                                    </div>
+                                </div>
+                                <div class="card-pop">
+                                    <img class="img-pop" src="Projet2-Reservia/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="img" />
+                                    <div class="card-details-pop">
+                                        <p class="text-gras">Hôtel Tout bleu et Blanc</p>
+                                        <p class="text-light">Nuit à partir de 68<b>€</b></p>
+                                        <div>étoiles</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Bloc Hébergements -->
+                    <div class="bloc-heb">
+                        <div>
+                            <div class="flex-between margin-titre">
+                                <h1>Hébergements à Marseille</h1>
+                            </div>
+                            <div class="bloc-card-heb">
+                                <div class="card-heb">
+                                    <img class="img-heb" src="Projet2-Reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="img" />
+                                    <div class="card-details-heb">
+                                        <p class="text-gras">Auberge la Cannebière</p>
+                                        <p class="text-light">Nuit à partir de <b>25€</b></p>
+                                        <div>étoiles</div>
+                                    </div>
+                                </div>
+                                <div class="card-heb flex-wrap">
+                                    <img class="img-heb" src="Projet2-Reservia/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="img" />
+                                    <div class="card-details-heb">
+                                        <p class="text-gras">Hôtel du port</p>
+                                        <p class="text-light">Nuit à partir de 52<b>€</b></p>
+                                        <div>étoiles</div>
+                                    </div>
+                                </div>
+                                <div class="card-heb flex-wrap">
+                                    <img class="img-heb" src="Projet2-Reservia/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="img" />
+                                    <div class="card-details-heb">
+                                        <p class="text-gras">Hôtel Les mouettes</p>
+                                        <p class="text-light">Nuit à partir de 76<b>€</b></p>
+                                        <div>étoiles</div>
+                                    </div>
+                                </div>
+                                <div class="card-heb flex-wrap">
+                                    <img class="img-heb" src="Projet2-Reservia/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="img" />
+                                    <div class="card-details-heb">
+                                        <p class="text-gras">Hôtel de la mer</p>
+                                        <p class="text-light">Nuit à partir de 46<b>€</b></p>
+                                        <div>étoiles</div>
+                                    </div>
+                                </div>
+                                <div class="card-heb flex-wrap">
+                                    <img class="img-heb" src="Projet2-Reservia/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="img" />
+                                    <div class="card-details-heb">
+                                        <p class="text-gras">Auberge Le Panier</p>
+                                        <p class="text-light">Nuit à partir de <b>23€</b></p>
+                                        <div>étoiles</div>
+                                    </div>
+                                </div>
+                                <div class="card-heb flex-wrap">
+                                    <img class="img-heb" src="Projet2-Reservia/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="img" />
+                                    <div class="card-details-heb">
+                                        <p class="text-gras">Hôtel chez Amina</p>
+                                        <p class="text-light">Nuit à partir de 96<b>€</b></p>
+                                        <div>étoiles</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="marginText text-gras">Afficher plus</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bloc-act-main">
+                    <!-- Bloc Activités -->
+                    <div class="bloc-act">
+                        <div>
+                            <div class="flex-between margin-titre">
+                                <h3>Activités à Marseille</h3>
+                            </div>
+                            <div class="bloc-card-act">
+                                <div class="column-act">
+                                    <div class="card-act cardAct">
+                                        <img class="img-act" src="Projet2-Reservia/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="img" />
+                                        <div class="card-details-act">
+                                            <p class="text-gras">Vieux Port</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-act cardAct2">
+                                        <img class="img-act" src="Projet2-Reservia/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="img" />
+                                        <div class="card-details-act">
+                                            <p class="text-gras">Fort de Pomègues</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-act cardAct3">
+                                        <img class="img-act" src="Projet2-Reservia/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="img" />
+                                        <div class="card-details-act">
+                                            <p class="text-gras">Îles du Frioul</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column-act">
+                                    <div class="card-act cardAct">
+                                        <img class="img-act" src="Projet2-Reservia/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="img" />
+                                        <div class="card-details-act">
+                                            <p class="text-gras">Parc National des Calanques</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-act cardAct2">
+                                        <img class="img-act" src="Projet2-Reservia/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="img" />
+                                        <div class="card-details-act">
+                                            <p class="text-gras">Notre-Dame-de-la-Garde</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-act cardAct3">
+                                        <img class="img-act" src="Projet2-Reservia/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="img" />
+                                        <div class="card-details-act">
+                                            <p class="text-gras">Parc Longchamp</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
-        </header>
-        <section class="flex-around">
-            <div class="flex-around-column sizeHeb backGris blocHebergements">
-                <h2>Hébergements à Marseille</h2>
-                <div class="bloc1 flex-between">
-                    <div class="cardHeb flex-center-column">
-                        <div class="imgHebergements1"></div>
-                        <div class="cardDetailHeb">
-                            <p class="texteGras">Auberge de la Cannebière</p>
-                            <p class="texteLight">Nuit à partir de 25€</p>
-                            <div>étoiles</div>
-                        </div>
-                    </div>
-                    <div class="cardHeb flex-center-column">
-                        <div class="imgHebergements2"></div>
-                        <div class="cardDetailHeb">
-                            <p class="texteGras">Hôtel du port</p>
-                            <p class="texteLight">Nuit à partir de 46€</p>
-                            <div>étoiles</div>
-                        </div>
-                    </div>
-                    <div class="cardHeb flex-center-column">
-                        <div class="imgHebergements3"></div>
-                        <div class="cardDetailHeb">
-                            <p class="texteGras">Hôtel les mouettes</p>
-                            <p class="texteLight">Nuit à partir de 25€</p>
-                            <div>étoiles</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="bloc2 flex-between">
-                    <div class="cardHeb flex-center-column">
-                        <div class="imgHebergements4"></div>
-                        <div class="cardDetailHeb">
-                            <p class="texteGras">Auberge de la mer</p>
-                            <p class="texteLight">Nuit à partir de 46€</p>
-                            <div>étoiles</div>
-                        </div>
-                    </div>
-                    <div class="cardHeb flex-center-column">
-                        <div class="imgHebergements5"></div>
-                        <div class="cardDetailHeb">
-                            <p class="texteGras">Auberge le Panier</p>
-                            <p class="texteLight">Nuit à partir de 23€</p>
-                            <div>étoiles</div>
-                        </div>
-                    </div>
-                    <div class="cardHeb flex-center-column">
-                        <div class="imgHebergements6"></div>
-                        <div class="cardDetailHeb">
-                            <p class="texteGras">Auberge chez Amina</p>
-                            <p class="texteLight">Nuit à partir de 96€</p>
-                            <div>étoiles</div>
-                        </div>
-                    </div>
-                </div>
-                <div></div>
-                <p class="texteGras">Afficher plus</p>
-            </div>
-            <div class="sizePop blocPop backGris flex-around-column">
-                <div class="flex-between">
-                    <h2>Les plus populaires</h2>
-                    <div><i class="fas fa-chart-line fa-2x"></i></div>
-                </div>
-                <div class="flex-around-column">
-                    <div class="cardPop flex-center">
-                        <div class="imgPopulaires1"></div>
-                        <div class="cardDetailPop">
-                            <p class="texteGras">Hôtel Le soleil du matin</p>
-                            <p class="texteLight">Nuit à partir de 128€</p>
-                            <div>étoiles</div>
-                        </div>
-                    </div>
-                    <div class="cardPop flex-center">
-                        <div class="imgPopulaires2"></div>
-                        <div class="cardDetailPop">
-                            <p class="texteGras">Au coeur de l'eau Chambres d'hôtes</p>
-                            <p class="texteLight">Nuit à partir de 71€</p>
-                            <div>étoiles</div>
-                        </div>
-                    </div>
-                    <div class="cardPop flex-center">
-                        <div class="imgPopulaires3"></div>
-                        <div class="cardDetailPop">
-                            <p class="texteGras">Hôtel Tout bleu et Blanc</p>
-                            <p class="texteLight">Nuit à partir de 68€</p>
-                            <div>étoiles</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="flex-around">
-            <div class="sizeActivites flex-around-column">
-                <h3>Activités à Marseille</h3>
-                <div class="flex-between containerAct">
-                    <div class="blocAct">
-                        <div class="cardAct flex-center-column">
-                            <div class="imgActivites1"></div>
-                            <div class="cardDetailAct">
-                                <p class="texteGras">Vieux Port</p>
-                            </div>
-                        </div>
-                        <div class="colonneAct flex-between-column">
-                            <div class="cardAct2 flex-center-column">
-                                <div class="imgActivites2"></div>
-                                <div class="cardDetailAct">
-                                    <p class="texteGras">Fort de Pomègues</p>
-                                </div>
-                            </div>
-                            <div class="cardAct3 flex-center-column">
-                                <div class="imgActivites3"></div>
-                                <div class="cardDetailAct">
-                                    <p class="texteGras">Îles du Frioul</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cardAct4 flex-center-column">
-                            <div class="imgActivites4"></div>
-                            <div class="cardDetailAct">
-                                <p class="texteGras">Parc National des Calanques</p>
-                            </div>
-                        </div>
-                        <div class="colonneAct2 flex-between-column">
-                            <div class="cardAct5 flex-center-column">
-                                <div class="imgActivites5"></div>
-                                <div class="cardDetailAct">
-                                    <p class="texteGras">Notre-Dame-de-la-Garde</p>
-                                </div>
-                            </div>
-                            <div class="cardAct6 flex-center-column">
-                                <div class="imgActivites6"></div>
-                                <div class="cardDetailAct">
-                                    <p class="texteGras">Parc Longchamp</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-    <footer>
-        <div class="blocFooter flex-wrap backGris">
-            <div class="flex-column-around cardFooter">
-                <p class="texteGras">A propos</p>
-                <p class="texteLight">Fonctionnement du site</p>
-                <p class="texteLight">Conditions générales de vente</p>
-                <p class="texteLight">Données et confidentialité</p>
-            </div>
-            <div class="flex-column-around cardFooter">
-                <p class="texteGras">Nos hébergements</p>
-                <p class="texteLight">Charte qualité</p>
-                <p class="texteLight">Soumettre votre hôtel</p>
-            </div>
-            <div class="flex-column-around cardFooter">
-                <p class="texteGras">Assistance</p>
-                <p class="texteLight">Centre d'aide</p>
-                <p class="texteLight">Nous contacter</p>
-            </div>
         </div>
-    </footer>
+        <footer></footer>
+    </div>
 </body>
 </html>
