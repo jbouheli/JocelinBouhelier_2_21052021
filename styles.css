@@ -190,8 +190,13 @@ header {
 
 /* barre de recherche */
 
+.padding-bloc {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
 .description {
-    padding: 1em 1.5em 0 1.5em;
+    padding-top: 1em;
 }
 
 .description > p {
@@ -209,7 +214,8 @@ header {
 .search-bar {
     width: 20.5em;
     height: auto;
-    margin: 1em 1.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
     border: 1px solid #f2f2f2;
     border-radius: 1em;
 }
@@ -246,7 +252,8 @@ header {
 
 .filters {
     height: auto;
-    margin: 1em 1.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 .title-filters {
@@ -291,7 +298,6 @@ header {
 
 .info-bulle {
     display: flex;
-    padding-left: 1.5em;
     font-weight: 300;
 }
 
@@ -403,20 +409,23 @@ header {
 
 .bloc-card-act {
     display: flex;
-    flex-flow: row wrap;  
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
 
 .card-act {
     width: 20.5em;
     height: 12em;
+    margin-bottom: 1em;
     background-color: white;
     border-radius: 20px;
     box-shadow: 1px 1px 10px rgb(211, 211, 211);
 }
 
 .column-act {
+    width: auto;
+    height: auto;
     justify-content: space-around;
-    margin-bottom: 1em;
 }
 
 .img-act {
@@ -452,6 +461,10 @@ header {
         padding-left: 2%;
         padding-right: 2%;
     }
+    .padding-bloc {
+        padding-left: 0;
+        padding-right: 0;
+    }
     .nav {
         order: 0;
         width: auto;
@@ -460,6 +473,7 @@ header {
     .signin {
         order: 1;
         margin-left: 1em;
+        padding: 0;
     }
     .item-lien {
         border-bottom: none;
@@ -474,6 +488,7 @@ header {
     }
     .conteneur-logo {
         width: auto;
+        padding: 0;
     }
     .filters {
         align-items: center;
@@ -486,36 +501,40 @@ header {
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    .bloc-pop {
-        width: 375px;
-        border-radius: 25px;
-        order: 1;
-    }
     .bloc-heb {
         width: 100%;
         padding: 1.5em;
-        margin-right: 2em;
         flex: 2;
         justify-content: space-around;
         background-color: #f2f2f2;
         border-radius: 25px;
     }
+    .bloc-pop {
+        border-radius: 25px;
+        margin-bottom: 2em;
+    }
     .card-heb {
         width: 15em;
+    }
+    .card-pop {
+        width: auto;
+    }
+    .bloc-act {
+        padding: 0;
     }
     .bloc-act-main {
         display: flex;
         flex-wrap: wrap;
+        padding-top: 2em;
     }
     .column-act {
         display: flex;
-        height: 450px;
-        width: 80%;
         flex-flow: column wrap;
         justify-content: space-between;
+        height: 450px;
     }
     .cardAct {
-        width: 16em;
+        width: 18em;
         height: 100%;
         border-radius: 20px;
         box-shadow: 1px 1px 10px rgb(211, 211, 211);
@@ -524,7 +543,7 @@ header {
         height: 85%;
     }
     .cardAct2 {
-        width: 16em;
+        width: 18em;
         height: 50%;
         border-radius: 20px;
         box-shadow: 1px 1px 10px rgb(211, 211, 211);
@@ -533,15 +552,23 @@ header {
         height: 75%;
     }
     .cardAct3 {
-        width: 16em;
+        width: 18em;
         height: 40%;
         border-radius: 20px;
         box-shadow: 1px 1px 10px rgb(211, 211, 211);
     }
 }
 @media screen and (min-width: 780px) {
+    .bloc-pop {
+        width: 375px;
+        order: 1;
+        border-radius: 25px;
+    }
+    .bloc-heb {
+        margin-right: 2em;
+    }
     .cardAct {
-        width: 16em;
+        width: 18em;
         height: 100%;
         border-radius: 20px;
         box-shadow: 1px 1px 10px rgb(211, 211, 211);
@@ -550,7 +577,7 @@ header {
         height: 85%;
     }
     .cardAct2 {
-        width: 16em;
+        width: 18em;
         height: 50%;
         border-radius: 20px;
         box-shadow: 1px 1px 10px rgb(211, 211, 211);
@@ -559,7 +586,7 @@ header {
         height: 75%;
     }
     .cardAct3 {
-        width: 16em;
+        width: 18em;
         height: 40%;
         border-radius: 20px;
         box-shadow: 1px 1px 10px rgb(211, 211, 211);
@@ -571,8 +598,6 @@ header {
     }
     .column-act {
         display: flex;
-        height: 450px;
-        width: 50%;
         flex-flow: column wrap;
     }
     .sizeActivites {
@@ -593,7 +618,7 @@ header {
         height: 450px;
     }
     .cardAct {
-        width: 16em;
+        width: 18em;
         height: 100%;
         border-radius: 20px;
         box-shadow: 1px 1px 10px rgb(211, 211, 211);
@@ -602,7 +627,7 @@ header {
         height: 85%;
     }
     .cardAct2 {
-        width: 16em;
+        width: 18em;
         height: 50%;
         border-radius: 20px;
         box-shadow: 1px 1px 10px rgb(211, 211, 211);
@@ -611,7 +636,7 @@ header {
         height: 75%;
     }
     .cardAct3 {
-        width: 16em;
+        width: 18em;
         height: 40%;
         border-radius: 20px;
         box-shadow: 1px 1px 10px rgb(211, 211, 211);
