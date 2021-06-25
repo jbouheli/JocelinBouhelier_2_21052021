@@ -243,6 +243,10 @@ header {
     border-radius: 1em;
 }
 
+.text-search {
+    display: none;
+}
+
 /* Filtres */
 
 .filters {
@@ -494,6 +498,14 @@ footer p {
         width: auto;
         padding: 0;
     }
+    .search-bar {
+        width: 26em;
+    }
+    .button-search {
+        width: auto;
+        padding: 1em;
+        border-radius: 0 1em 1em 0;
+    }
     .filters {
         align-items: center;
     }
@@ -560,6 +572,12 @@ footer p {
         height: 40%;
         border-radius: 20px;
         box-shadow: 1px 1px 10px rgb(211, 211, 211);
+    }
+    .button-search > i {
+        display: none;
+    }
+    .text-search {
+        display: flex;
     }
 }
 @media screen and (min-width: 780px) {
