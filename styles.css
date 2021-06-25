@@ -9,12 +9,14 @@
 body {
     font-family: "Raleway", "Sans serif";
     width: 100%;
-    margin-top: 2%;
+    margin-top: 4%;
     min-width: 375px;
 }
 
 /* Styles et couleurs */
-
+.bloc-stars {
+    margin-bottom: 0;
+}
 .text-light {
     font-weight: 300;
     font-size: .9em;
@@ -27,11 +29,6 @@ body {
 
 h1 {
     font-size: 1.2em;
-}
-
-footer p {
-    margin-top: 1em;
-    margin-bottom: 1em;
 }
 
 .marginText {
@@ -141,9 +138,10 @@ header {
 }
 
 .nav {
+    display: flex;
+    justify-content: space-around;
     order: 2;
     width: 100%;
-    justify-content: space-around;
     text-align: center;
     margin-top: 10px;
     padding-bottom: 10px;
@@ -154,7 +152,7 @@ header {
 }
 
 .nav a:hover {
-    width: 50%;
+    width: 100%;
     padding-top: 0px;
     margin-top: 0px;
     color: #0065fc;
@@ -184,6 +182,7 @@ header {
 
 .item-lien:hover {
     width: 100%;
+    text-align: center;
     border-bottom: 2px solid #0065fc;
     padding-bottom: 10px;
 }
@@ -214,8 +213,8 @@ header {
 .search-bar {
     width: 20.5em;
     height: auto;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
     border: 1px solid #f2f2f2;
     border-radius: 1em;
 }
@@ -339,25 +338,24 @@ header {
     box-shadow: 1px 1px 10px rgb(211, 211, 211);
 }
 
-.card-pop > p {
-    margin: 10px 0;
-}
-
 .img-pop {
     object-fit: cover;
-	width: 40%;
+	min-width: 40%;
     height: 100%;
     border-radius: 15px 0 0 15px;
-    margin-right: 1em;
 }
 
 .card-details-pop {
     width: 100%;
     padding-right: 1em;
+    padding-left: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .card-details-pop > p {
-    margin: 10px 0;
+    margin-top: 10px;
 }
 
 /* Catégorie hébergements */
@@ -395,6 +393,9 @@ header {
 
 .card-details-heb {
     margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 /* Catégorie activités */
@@ -454,12 +455,17 @@ header {
     margin: 2em 5em 2em 3em;
 }
 
+footer p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
 /* version tablette */
 
 @media screen and (min-width: 600px) {
     .container {
-        padding-left: 2%;
-        padding-right: 2%;
+        padding-left: 3%;
+        padding-right: 3%;
     }
     .padding-bloc {
         padding-left: 0;
@@ -469,10 +475,10 @@ header {
         order: 0;
         width: auto;
         margin-left: auto;
+        margin-right: 1em;
     }
     .signin {
         order: 1;
-        margin-left: 1em;
         padding: 0;
     }
     .item-lien {
@@ -517,7 +523,7 @@ header {
         width: 15em;
     }
     .card-pop {
-        width: auto;
+        width: 100%;
     }
     .bloc-act {
         padding: 0;
@@ -563,6 +569,7 @@ header {
         width: 375px;
         order: 1;
         border-radius: 25px;
+        margin-bottom: 0;
     }
     .bloc-heb {
         margin-right: 2em;
