@@ -9,8 +9,10 @@
 body {
     font-family: "Raleway", "Sans serif";
     width: 100%;
+    margin: auto;
     margin-top: 4%;
     min-width: 375px;
+    max-width: 1375px;
 }
 
 /* Styles et couleurs */
@@ -143,7 +145,7 @@ header {
     order: 2;
     width: 100%;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 1em;
     padding-bottom: 10px;
 }
 
@@ -156,11 +158,6 @@ header {
     padding-top: 0px;
     margin-top: 0px;
     color: #0065fc;
-}
-
-.logo-nav {
-    margin-left: 10px;
-    border: 2px solid black;
 }
 
 .conteneur-logo {
@@ -176,7 +173,7 @@ header {
 
 .item-lien {
     width: 100%;
-    border-bottom: 2px solid #f2f2f2;
+    border-bottom: 3px solid #f2f2f2;
     padding-bottom: 10px;
 }
 
@@ -195,12 +192,11 @@ header {
 }
 
 .description {
-    padding-top: 1em;
+    padding-top: 1.5em;
 }
 
 .description > p {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 1em;
     font-weight: 300;
 }
 
@@ -213,7 +209,7 @@ header {
 .search-bar {
     width: 20.5em;
     height: auto;
-    margin-top: 1em;
+    margin-top: 2em;
     margin-bottom: 1em;
     border: 1px solid #f2f2f2;
     border-radius: 1em;
@@ -297,6 +293,7 @@ header {
 
 .info-bulle {
     display: flex;
+    padding-bottom: 1.5em;
     font-weight: 300;
 }
 
@@ -452,7 +449,7 @@ header {
 
 .card-footer {
     width: 15em;
-    margin: 2em 5em 2em 3em;
+    margin: 2em 0 2em 1.5em;
 }
 
 footer p {
@@ -476,6 +473,7 @@ footer p {
         width: auto;
         margin-left: auto;
         margin-right: 1em;
+        margin-top: 10px;
     }
     .signin {
         order: 1;
