@@ -16,9 +16,18 @@ body {
 }
 
 /* Styles et couleurs */
+
+a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
 .bloc-stars {
     margin-bottom: 0;
 }
+
 .text-light {
     font-weight: 300;
     font-size: .9em;
@@ -446,14 +455,15 @@ header {
 
 .bloc-footer {
     width: 100%;
-    margin-top: 10px;
-    display: flex;
+    padding-top: 1em;
+    padding-bottom: 1.5em;
     flex-direction: row;
 }
 
 .card-footer {
     width: 15em;
-    margin: 2em 0 2em 1.5em;
+    margin-right: 9em;
+    margin-left: 1.5em;
 }
 
 footer p {
