@@ -10,7 +10,7 @@ body {
     font-family: "Raleway", "Sans serif";
     width: 100%;
     margin: auto;
-    margin-top: 4%;
+    margin-top: 2%;
     min-width: 375px;
     max-width: 1375px;
 }
@@ -154,8 +154,6 @@ header {
     order: 2;
     width: 100%;
     text-align: center;
-    margin-top: 1em;
-    padding-bottom: 10px;
 }
 
 .nav a {
@@ -172,11 +170,13 @@ header {
 .conteneur-logo {
     width: auto;
     padding-left: 1.5em;
+    padding-bottom: 1em;
 }
 
 .signin {
     order: 1;
     padding-right: 1.5em;
+    padding-bottom: 1em;
     font-weight: bold;
 }
 
@@ -474,6 +474,9 @@ footer p {
 /* version tablette */
 
 @media screen and (min-width: 600px) {
+    body {
+        margin-top: 0;
+    }
     .container {
         padding-left: 3%;
         padding-right: 3%;
@@ -484,10 +487,9 @@ footer p {
     }
     .nav {
         order: 0;
-        width: auto;
+        width: 20em;
         margin-left: auto;
         margin-right: 1em;
-        margin-top: 10px;
     }
     .signin {
         order: 1;
@@ -496,13 +498,24 @@ footer p {
     .item-lien {
         border-bottom: none;
         padding-bottom: 0;
-        margin-right: 10%;
     }
     .item-lien:hover {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+    .item-lien a:hover {
         width: 100%;
         border-top: 2px solid #0065fc;
-        border-bottom: 0;
-        padding-top: 10px;
+        border-bottom: none;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+    .item-lien a {
+        width: 100%;
+        border-top: 2px solid white;
+        border-bottom: none;
+        padding-top: 2em;
+        padding-bottom: 2em;
     }
     .conteneur-logo {
         width: auto;
@@ -547,6 +560,7 @@ footer p {
     }
     .bloc-act {
         padding: 0;
+        padding-bottom: 2em;
     }
     .bloc-act-main {
         display: flex;
