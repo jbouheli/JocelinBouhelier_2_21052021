@@ -517,7 +517,7 @@ footer p {
         padding-top: 2em;
         padding-bottom: 2em;
     }
-    .conteneur-logo {
+    .contenair-logo {
         width: auto;
         padding: 0;
     }
@@ -619,22 +619,5 @@ footer p {
     .column-act {
         display: flex;
         flex-flow: column wrap;
-    }
-    .sizeActivites {
-        flex: 1;
-        margin-bottom: 10px;
-        padding-top: 2px;
-    }
-    .marginAct {
-        margin: 0.5em;
-    }
-    .containerAct {
-        width: 100%;
-    }
-    .blocAct {
-        display: flex;
-        flex-flow: column wrap;
-        width: 100%;
-        height: 450px;
     }
 }
