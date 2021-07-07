@@ -33,7 +33,7 @@ a {
     font-size: .9em;
 }
 
-.text-gras {
+.text-bold {
     font-weight: 700;
     font-size: 1.1em;
 }
@@ -42,17 +42,17 @@ h1 {
     font-size: 1.2em;
 }
 
-.marginText {
+.text-margin {
     margin-top: 1em;
     margin-bottom: 1em;
 }
 
-.margin-titre {
+.title-margin {
     margin-top: .5em;
     margin-bottom: 1.5em; 
 }
 
-.marginBloc {
+.bloc-margin {
     margin-top: 2em;
     margin-bottom: 2em;
 }
@@ -65,7 +65,7 @@ h1 {
     border: none;
 }
 
-.color-bleu {
+.color-blue {
     color: #0065fc;
 }
 
@@ -73,7 +73,7 @@ h1 {
     color: #deebff;
 }
 
-.color-gris {
+.color-grey {
     color: #f2f2f2;
 }
 
@@ -81,7 +81,7 @@ h1 {
     color: #00122c;
 }
 
-.back-bleu {
+.back-blue {
     background-color: #0065fc;
 }
 
@@ -89,7 +89,7 @@ h1 {
     background-color: #deebff;
 }
 
-.back-gris {
+.back-grey {
     background-color: #f2f2f2;
 }
 
@@ -167,7 +167,7 @@ header {
     color: #0065fc;
 }
 
-.conteneur-logo {
+.contenair-logo {
     width: auto;
     padding-left: 1.5em;
     padding-bottom: 1em;
@@ -573,29 +573,26 @@ footer p {
         justify-content: space-between;
         height: 450px;
     }
-    .cardAct {
+    .card-act-resp {
         width: 18em;
-        height: 100%;
         border-radius: 20px;
         box-shadow: 1px 1px 10px rgb(211, 211, 211);
     }
-    .cardAct > img {
+
+    .card-act-resp1 {
+        height: 100%;
+    }
+    .card-act-resp1 > img {
         height: 85%;
     }
-    .cardAct2 {
-        width: 18em;
+    .card-act-resp2 {
         height: 50%;
-        border-radius: 20px;
-        box-shadow: 1px 1px 10px rgb(211, 211, 211);
     }
-    .cardAct2 > img {
+    .card-act-resp2 > img {
         height: 75%;
     }
-    .cardAct3 {
-        width: 18em;
+    .card-act-resp3 {
         height: 40%;
-        border-radius: 20px;
-        box-shadow: 1px 1px 10px rgb(211, 211, 211);
     }
     .button-search > i {
         display: none;
@@ -613,30 +610,6 @@ footer p {
     }
     .bloc-heb {
         margin-right: 2em;
-    }
-    .cardAct {
-        width: 18em;
-        height: 100%;
-        border-radius: 20px;
-        box-shadow: 1px 1px 10px rgb(211, 211, 211);
-    }
-    .cardAct > img {
-        height: 85%;
-    }
-    .cardAct2 {
-        width: 18em;
-        height: 50%;
-        border-radius: 20px;
-        box-shadow: 1px 1px 10px rgb(211, 211, 211);
-    }
-    .cardAct2 > img {
-        height: 75%;
-    }
-    .cardAct3 {
-        width: 18em;
-        height: 40%;
-        border-radius: 20px;
-        box-shadow: 1px 1px 10px rgb(211, 211, 211);
     }
 }
 @media screen and (min-width: 1000px) {
@@ -663,29 +636,5 @@ footer p {
         flex-flow: column wrap;
         width: 100%;
         height: 450px;
-    }
-    .cardAct {
-        width: 18em;
-        height: 100%;
-        border-radius: 20px;
-        box-shadow: 1px 1px 10px rgb(211, 211, 211);
-    }
-    .cardAct > img {
-        height: 85%;
-    }
-    .cardAct2 {
-        width: 18em;
-        height: 50%;
-        border-radius: 20px;
-        box-shadow: 1px 1px 10px rgb(211, 211, 211);
-    }
-    .cardAct2 > img {
-        height: 75%;
-    }
-    .cardAct3 {
-        width: 18em;
-        height: 40%;
-        border-radius: 20px;
-        box-shadow: 1px 1px 10px rgb(211, 211, 211);
     }
 }
